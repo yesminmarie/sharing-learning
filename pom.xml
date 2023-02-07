@@ -20,6 +20,7 @@
         <module>eurekaserver</module>
         <module>users</module>
         <module>courses</module>
+        <module>payment</module>
         <module>gateway</module>
     </modules>
 
