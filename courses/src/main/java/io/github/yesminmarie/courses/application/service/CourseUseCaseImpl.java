@@ -26,21 +26,5 @@ public class CourseUseCaseImpl implements CourseUseCase {
 
         return modelMapper.map(course, CourseResponse.class);
 
-//        Course course = Course
-//                .builder()
-//                .courseId(UUID.randomUUID())
-//                .name(courseRequest.getName())
-//                .instructor(courseRequest.getInstructor())
-//                .duration(courseRequest.getDuration())
-//                .price(courseRequest.getPrice())
-//                .build();
-//
-//        return CourseResponse
-//                .builder()
-//                .name(courseRequest.getName())
-//                .instructor(courseRequest.getInstructor())
-//                .duration(courseRequest.getDuration())
-//                .price(courseRequest.getPrice())
-//                .build();
     }
 }
