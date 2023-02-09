@@ -22,6 +22,7 @@ public class GatewayApplication {
 					.route(r -> r.path("/users/**").uri("lb://users"))
 					.route(r -> r.path("/courses/**").uri("lb://courses"))
 					.route(r -> r.path("/payments/**").uri("lb://payments"))
+					.route(r -> r.path("/enrollments/**").uri("lb://enrollments"))
 				.build();
 	}
 }

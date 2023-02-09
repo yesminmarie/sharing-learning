@@ -21,6 +21,7 @@
         <module>users</module>
         <module>courses</module>
         <module>payment</module>
+        <module>enrollment</module>
         <module>gateway</module>
     </modules>
 
