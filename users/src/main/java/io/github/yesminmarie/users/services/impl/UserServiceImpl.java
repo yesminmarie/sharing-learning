@@ -4,6 +4,7 @@ import io.github.yesminmarie.users.domain.User;
 import io.github.yesminmarie.users.infra.repository.UsersRepository;
 import io.github.yesminmarie.users.services.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Cacheable("findByEmail")
     public Optional<User> getUserByEmail(String email) {
         return repository.findByEmail(email);
     }
